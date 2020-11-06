@@ -8,6 +8,7 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
   this.route('clothes', function() {
-    this.route('tshirt');
+    this.route('tshirt');//nested route
   });
+  this.route('item', {path :  "/item/:item_id"} );//dynamic route
 });
