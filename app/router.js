@@ -11,4 +11,6 @@ Router.map(function() {
     this.route('tshirt');//nested route
   });
   this.route('item', {path :  "/item/:item_id"} );//dynamic route
+  this.route('not-found', {path : '/*path'});
+  this.route('cart');
 });
